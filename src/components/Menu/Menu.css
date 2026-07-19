@@ -1,0 +1,133 @@
+.menu-section {
+    padding: 80px;
+    background: #fffaf5;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu-header span {
+    color: #c28a45;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.menu-header h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.menu-header button {
+    padding: 12px 24px;
+    border: 1px solid #c28a45;
+    background: white;
+    color: #c28a45;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 18px;
+}
+
+.menu-content h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Price */
+
+.price-rating span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* Rating */
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #ffb400;
+}
+
+.rating svg {
+    font-size: 15px;
+}
+
+.rating-text {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+
+/* Add To Cart Button */
+
+.cart-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #5c3b1e;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cart-btn:hover {
+    background: #c28a45;
+}
+
+@media(max-width:992px) {
+    .menu-section {
+        padding: 50px 20px;
+    }
+    .menu-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
