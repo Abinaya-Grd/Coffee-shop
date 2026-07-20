@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
     min-height: 90vh;
-    background-color: #1b120b;
+    background-color: #1B120B;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,9 +38,9 @@
     gap: 20px;
 }
 
-.primary-btn {
+.primary-button {
     padding: 15px 35px;
-    background-color: #d6a05d;
+    background-color: #D6A05D;
     border: none;
     color: white;
     font-size: 18px;
@@ -48,7 +48,7 @@
     border-radius: 8px;
 }
 
-.secondary-btn {
+.secondary-button {
     padding: 15px 35px;
     background-color: transparent;
     color: white;
@@ -57,13 +57,14 @@
     border-radius: 8px;
 }
 
-.hero-images {
+
+.hero-image {
     width: 45%;
     display: flex;
     justify-content: center;
 }
 
-.hero-images img {
+.hero-image img {
     width: 100%;
     max-width: 600px;
 }
@@ -85,11 +86,11 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-    .hero-images {
+    .hero-image {
         width: 100%;
         margin-top: 40px;
     }
-    .hero-images img {
+    .hero-image img {
         width: 80%;
     }
 }
