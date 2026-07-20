@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
     min-height: 90vh;
-    background-color: #1B120B;
+    background-color: #1b120b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,9 +38,9 @@
     gap: 20px;
 }
 
-.primary-button {
+.primary-btn {
     padding: 15px 35px;
-    background-color: #D6A05D;
+    background-color: #d6a05d;
     border: none;
     color: white;
     font-size: 18px;
@@ -48,7 +48,7 @@
     border-radius: 8px;
 }
 
-.secondary-button {
+.secondary-btn {
     padding: 15px 35px;
     background-color: transparent;
     color: white;
