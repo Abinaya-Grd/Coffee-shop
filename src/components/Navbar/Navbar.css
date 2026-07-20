@@ -180,102 +180,26 @@
             body {
                 padding-top: 80px;
             }
-            /* ===========================
-        Laptop
-=========================== */
             
-            @media (max-width: 992px) {
+            @media (max-width: 991px) {
                 .navbar {
-                    padding: 0 30px;
-                    height: 75px;
-                }
-                .nav-links {
-                    gap: 20px;
-                }
-                .nav-links a {
-                    font-size: 15px;
-                }
-                .logo h2 {
-                    font-size: 22px;
-                }
-                .logo span {
-                    font-size: 12px;
-                }
-                .nav-icons {
-                    gap: 15px;
-                }
-            }
-            /* ===========================
-        Tablet
-=========================== */
-            
-            @media (max-width: 768px) {
-                .navbar {
-                    padding: 0 20px;
-                    height: 70px;
+                    padding: 15px 20px;
+                    flex-wrap: wrap;
                 }
                 .nav-links {
                     display: none;
                 }
-                .logo h2 {
-                    font-size: 20px;
-                }
-                .logo span {
-                    display: none;
-                }
-                .logo-icon {
-                    font-size: 30px;
-                }
-                .nav-icons {
-                    gap: 15px;
-                }
-                .nav-icons svg {
-                    font-size: 18px;
-                }
-            }
-            /* ===========================
-        Mobile
-=========================== */
-            
-            @media (max-width: 576px) {
-                .navbar {
-                    padding: 0 15px;
-                    height: 65px;
-                }
-                .logo {
-                    gap: 8px;
-                }
-                .logo h2 {
-                    font-size: 18px;
-                }
-                .logo-icon {
-                    font-size: 26px;
-                }
-                .nav-icons {
-                    gap: 12px;
-                }
-                .nav-icons svg {
-                    font-size: 16px;
-                }
-            }
-            /* ===========================
-      Small Mobile
-=========================== */
-            
-            @media (max-width: 375px) {
-                .navbar {
-                    padding: 0 10px;
-                }
-                .logo h2 {
-                    font-size: 16px;
-                }
-                .logo-icon {
-                    font-size: 24px;
-                }
-                .nav-icons {
+                .nav-right {
                     gap: 10px;
                 }
-                .nav-icons svg {
-                    font-size: 15px;
+            }
+            
+            @media (max-width: 576px) {
+                .logo {
+                    font-size: 24px;
+                }
+                .order-btn {
+                    padding: 10px 15px;
+                    font-size: 14px;
                 }
             }

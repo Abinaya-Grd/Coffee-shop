@@ -75,114 +75,17 @@
     font-size: 15px;
 }
 
-
-/* ===========================
-        Laptop
-=========================== */
-
 @media (max-width: 992px) {
-    .testimonial-section {
-        padding: 60px 30px;
-    }
-    .testimonial-heading h2 {
-        font-size: 36px;
-    }
     .testimonial-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-    .testimonial-card {
-        padding: 30px 25px;
     }
 }
 
-
-/* ===========================
-        Tablet
-=========================== */
-
-@media (max-width: 768px) {
-    .testimonial-section {
+@media (max-width: 600px) {
+    .testimonials {
         padding: 50px 20px;
-    }
-    .testimonial-heading h2 {
-        font-size: 32px;
-    }
-    .testimonial-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    .testimonial-card {
-        padding: 25px 20px;
-    }
-    .testimonial-card img {
-        width: 80px;
-        height: 80px;
-    }
-    .review {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-}
-
-
-/* ===========================
-        Mobile
-=========================== */
-
-@media (max-width: 576px) {
-    .testimonial-section {
-        padding: 40px 15px;
-    }
-    .testimonial-heading h2 {
-        font-size: 28px;
-    }
-    .testimonial-heading span {
-        font-size: 14px;
     }
     .testimonial-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .testimonial-card {
-        padding: 22px 18px;
-    }
-    .testimonial-card img {
-        width: 75px;
-        height: 75px;
-    }
-    .testimonial-card h3 {
-        font-size: 20px;
-    }
-    .role {
-        font-size: 13px;
-    }
-    .review {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-}
-
-
-/* ===========================
-      Small Mobile
-=========================== */
-
-@media (max-width: 375px) {
-    .testimonial-heading h2 {
-        font-size: 24px;
-    }
-    .testimonial-card {
-        padding: 20px 15px;
-    }
-    .testimonial-card img {
-        width: 65px;
-        height: 65px;
-    }
-    .testimonial-card h3 {
-        font-size: 18px;
-    }
-    .review {
-        font-size: 13px;
     }
 }

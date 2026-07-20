@@ -111,103 +111,22 @@
     color: #bbb;
 }
 
-
-/* ===========================
-        Laptop
-=========================== */
-
 @media (max-width: 992px) {
     .footer {
-        padding: 60px 30px;
-    }
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
-    .footer-logo h2 {
-        font-size: 26px;
-    }
-}
-
-
-/* ===========================
-        Tablet
-=========================== */
-
-@media (max-width: 768px) {
-    .footer {
-        padding: 50px 20px;
+        padding: 50px 20px 20px;
     }
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    .footer-col h3 {
-        font-size: 22px;
-    }
-    .footer-col p,
-    .footer-col a {
-        font-size: 15px;
-    }
 }
 
-
-/* ===========================
-        Mobile
-=========================== */
-
-@media (max-width: 576px) {
-    .footer {
-        padding: 40px 15px;
-        text-align: center;
-    }
+@media (max-width: 600px) {
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    .footer-logo {
-        justify-content: center;
-    }
-    .footer-logo h2 {
-        font-size: 24px;
+        text-align: center;
     }
     .social-icons {
         justify-content: center;
-        gap: 15px;
-    }
-    .newsletter {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .newsletter input {
-        width: 100%;
-    }
-    .newsletter button {
-        width: 100%;
-    }
-}
-
-
-/* ===========================
-      Small Mobile
-=========================== */
-
-@media (max-width: 375px) {
-    .footer {
-        padding: 35px 12px;
-    }
-    .footer-logo h2 {
-        font-size: 20px;
-    }
-    .footer-col h3 {
-        font-size: 20px;
-    }
-    .footer-col p,
-    .footer-col a {
-        font-size: 14px;
-    }
-    .social-icons {
-        gap: 12px;
     }
 }

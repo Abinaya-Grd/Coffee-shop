@@ -51,100 +51,40 @@
 .founder {
     color: #e3d7d7;
     font-size: 18px;
+}@media(max-width:992px){
+
+.about{
+
+flex-direction:column;
+
+padding:50px 20px;
+
+text-align:center;
+
 }
 
+.about-image{
 
-/* ===========================
-        Laptop
-=========================== */
+width:100%;
 
-@media (max-width: 992px) {
-    .about-section {
-        flex-direction: column;
-        padding: 60px 30px;
-        text-align: center;
-        gap: 40px;
-    }
-    .about-image,
-    .about-content {
-        width: 100%;
-    }
-    .about-content h2 {
-        font-size: 36px;
-    }
-    .about-content p {
-        font-size: 17px;
-        line-height: 30px;
-    }
 }
 
+.about-content{
 
-/* ===========================
-        Tablet
-=========================== */
+width:100%;
 
-@media (max-width: 768px) {
-    .about-section {
-        padding: 50px 20px;
-        gap: 30px;
-    }
-    .about-subtitle {
-        font-size: 24px;
-    }
-    .about-content h2 {
-        font-size: 32px;
-    }
-    .about-content p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-    .about-content h3 {
-        font-size: 24px;
-    }
 }
 
+.about-content h2{
 
-/* ===========================
-        Mobile
-=========================== */
+font-size:35px;
 
-@media(max-width:992px) {
-    .about {
-        flex-direction: column;
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .about-image {
-        width: 100%;
-    }
-    .about-content {
-        width: 100%;
-    }
-    .about-content h2 {
-        font-size: 35px;
-    }
-    .about-content p {
-        font-size: 17px;
-    }
 }
 
+.about-content p{
 
-/* ===========================
-      Small Mobile
-=========================== */
+font-size:17px;
 
-@media (max-width: 375px) {
-    .about-content h2 {
-        font-size: 24px;
-    }
-    .about-subtitle {
-        font-size: 18px;
-    }
-    .about-content p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .about-content h3 {
-        font-size: 20px;
-    }
+}
+
 }

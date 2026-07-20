@@ -103,90 +103,22 @@
     background: #c28a45;
 }
 
-@media (max-width: 992px) {
+@media(max-width:992px) {
     .menu-section {
-        padding: 60px 30px;
+        padding: 50px 20px;
     }
     .menu-header {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
-    .menu-header h2 {
-        font-size: 34px;
-    }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 }
 
-@media (max-width: 768px) {
-    .menu-section {
-        padding: 50px 20px;
-    }
-    .menu-header h2 {
-        font-size: 30px;
-    }
-    .menu-header button {
-        width: 180px;
-    }
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-    .menu-card img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 576px) {
-    .menu-section {
-        padding: 40px 15px;
-    }
-    .menu-header h2 {
-        font-size: 26px;
-    }
-    .menu-header span {
-        font-size: 14px;
-    }
+@media(max-width:600px) {
     .menu-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .menu-card img {
-        height: 240px;
-    }
-    .menu-content {
-        padding: 15px;
-    }
-    .menu-content h3 {
-        font-size: 20px;
-    }
-    .price-rating {
-        flex-direction: row;
-        align-items: center;
-    }
-    .price-rating span:first-child {
-        font-size: 18px;
-    }
-    .rating {
-        font-size: 14px;
-    }
-    .cart-btn {
-        padding: 12px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 375px) {
-    .menu-header h2 {
-        font-size: 22px;
-    }
-    .menu-card img {
-        height: 200px;
-    }
-    .menu-content h3 {
-        font-size: 18px;
     }
 }
