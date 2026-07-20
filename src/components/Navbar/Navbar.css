@@ -64,232 +64,218 @@
             .nav-icons svg {
                 font-size: 18px;
                 cursor: pointer;
-            }*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-}
-
-/* ===========================
-        NAVBAR
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            .navbar {
+                width: 100%;
+                height: 80px;
+                background: #1c120b;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 60px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+            }
+            
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            
+            .logo-icon {
+                font-size: 35px;
+                color: #d8a25e;
+            }
+            
+            .logo h2 {
+                font-size: 26px;
+                color: #d8a25e;
+            }
+            
+            .logo span {
+                font-size: 13px;
+                color: #d8a25e;
+            }
+            
+            .nav-links {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                gap: 35px;
+            }
+            
+            .nav-links li {
+                list-style: none;
+            }
+            
+            .nav-links a {
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                transition: .3s;
+                position: relative;
+            }
+            
+            .nav-links a:hover {
+                color: #d8a25e;
+            }
+            
+            .nav-links a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                width: 0;
+                height: 2px;
+                background: #d8a25e;
+                transition: .3s;
+            }
+            
+            .nav-links a:hover::after {
+                width: 100%;
+            }
+            
+            .nav-icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .nav-icons svg {
+                font-size: 20px;
+                cursor: pointer;
+                transition: .3s;
+            }
+            
+            .nav-icons svg:hover {
+                color: #d8a25e;
+                transform: scale(1.15);
+            }
+            
+            section {
+                scroll-margin-top: 90px;
+            }
+            
+            body {
+                padding-top: 80px;
+            }
+            /* ===========================
+        Laptop
 =========================== */
-
-.navbar{
-    width:100%;
-    height:80px;
-    background:#1c120b;
-    color:white;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 60px;
-
-    position:fixed;
-    top:0;
-    left:0;
-
-    z-index:1000;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.2);
-}
-
-/* ===========================
-        LOGO
+            
+            @media (max-width: 992px) {
+                .navbar {
+                    padding: 0 30px;
+                    height: 75px;
+                }
+                .nav-links {
+                    gap: 20px;
+                }
+                .nav-links a {
+                    font-size: 15px;
+                }
+                .logo h2 {
+                    font-size: 22px;
+                }
+                .logo span {
+                    font-size: 12px;
+                }
+                .nav-icons {
+                    gap: 15px;
+                }
+            }
+            /* ===========================
+        Tablet
 =========================== */
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.logo-icon{
-    font-size:35px;
-    color:#d8a25e;
-}
-
-.logo h2{
-    font-size:26px;
-    color:#d8a25e;
-}
-
-.logo span{
-    font-size:13px;
-    color:#d8a25e;
-}
-
-/* ===========================
-      NAVIGATION LINKS
+            
+            @media (max-width: 768px) {
+                .navbar {
+                    padding: 0 20px;
+                    height: 70px;
+                }
+                .nav-links {
+                    display: none;
+                }
+                .logo h2 {
+                    font-size: 20px;
+                }
+                .logo span {
+                    display: none;
+                }
+                .logo-icon {
+                    font-size: 30px;
+                }
+                .nav-icons {
+                    gap: 15px;
+                }
+                .nav-icons svg {
+                    font-size: 18px;
+                }
+            }
+            /* ===========================
+        Mobile
 =========================== */
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    list-style:none;
-    gap:35px;
-}
-
-.nav-links li{
-    list-style:none;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:white;
-    font-weight:600;
-    font-size:16px;
-    transition:.3s;
-    position:relative;
-}
-
-/* Hover Color */
-
-.nav-links a:hover{
-    color:#d8a25e;
-}
-
-/* Underline Animation */
-
-.nav-links a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:2px;
-
-    background:#d8a25e;
-
-    transition:.3s;
-
-}
-
-.nav-links a:hover::after{
-
-    width:100%;
-
-}
-
-/* ===========================
-          ICONS
+            
+            @media (max-width: 576px) {
+                .navbar {
+                    padding: 0 15px;
+                    height: 65px;
+                }
+                .logo {
+                    gap: 8px;
+                }
+                .logo h2 {
+                    font-size: 18px;
+                }
+                .logo-icon {
+                    font-size: 26px;
+                }
+                .nav-icons {
+                    gap: 12px;
+                }
+                .nav-icons svg {
+                    font-size: 16px;
+                }
+            }
+            /* ===========================
+      Small Mobile
 =========================== */
-
-.nav-icons{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-
-.nav-icons svg{
-
-    font-size:20px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.nav-icons svg:hover{
-
-    color:#d8a25e;
-
-    transform:scale(1.15);
-
-}
-
-/* ===========================
-     SPACE FOR FIXED NAVBAR
-=========================== */
-
-section{
-
-    scroll-margin-top:90px;
-
-}
-
-body{
-
-    padding-top:80px;
-
-}
-
-/* ===========================
-        TABLET
-=========================== */
-
-@media(max-width:992px){
-
-.navbar{
-
-    padding:0 25px;
-
-}
-
-.nav-links{
-
-    gap:20px;
-
-}
-
-.logo h2{
-
-    font-size:22px;
-
-}
-
-}
-
-/* ===========================
-        MOBILE
-=========================== */
-
-@media(max-width:768px){
-
-.navbar{
-
-    padding:0 20px;
-
-}
-
-.nav-links{
-
-    display:none;
-
-}
-
-.nav-icons{
-
-    gap:15px;
-
-}
-
-.logo h2{
-
-    font-size:20px;
-
-}
-
-.logo span{
-
-    display:none;
-
-}
-
-}
+            
+            @media (max-width: 375px) {
+                .navbar {
+                    padding: 0 10px;
+                }
+                .logo h2 {
+                    font-size: 16px;
+                }
+                .logo-icon {
+                    font-size: 24px;
+                }
+                .nav-icons {
+                    gap: 10px;
+                }
+                .nav-icons svg {
+                    font-size: 15px;
+                }
+            }

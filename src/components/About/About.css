@@ -8,9 +8,6 @@
     background: #d8a25e;
 }
 
-
-
-
 .about-image {
     flex: 1;
 }
@@ -20,9 +17,6 @@
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 .about-content {
     flex: 1;
@@ -59,22 +53,107 @@
     font-size: 18px;
 }
 
-@media(max-width:992px) {
-    .about {
+
+/* ===========================
+        Laptop
+=========================== */
+
+@media (max-width: 992px) {
+    .about-section {
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 60px 30px;
         text-align: center;
+        gap: 40px;
     }
-    .about-image {
-        width: 100%;
-    }
+    .about-image,
     .about-content {
         width: 100%;
     }
     .about-content h2 {
-        font-size: 35px;
+        font-size: 36px;
     }
     .about-content p {
         font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+
+/* ===========================
+        Tablet
+=========================== */
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+    .about-subtitle {
+        font-size: 24px;
+    }
+    .about-content h2 {
+        font-size: 32px;
+    }
+    .about-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .about-content h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* ===========================
+        Mobile
+=========================== */
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 40px 15px;
+        gap: 25px;
+    }
+    .about-image img {
+        border-radius: 12px;
+    }
+    .about-subtitle {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .about-content h2 {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+    .about-content p {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .about-content h3 {
+        font-size: 22px;
+    }
+    .founder {
+        font-size: 16px;
+    }
+}
+
+
+/* ===========================
+      Small Mobile
+=========================== */
+
+@media (max-width: 375px) {
+    .about-content h2 {
+        font-size: 24px;
+    }
+    .about-subtitle {
+        font-size: 18px;
+    }
+    .about-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about-content h3 {
+        font-size: 20px;
     }
 }
